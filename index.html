@@ -1,91 +1,67 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Martial Arts Academy Bastion</title>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="rzym.css">
+<style>
+h1 {
+    color:grey;
+    border-style: ridge;
+    text-shadow: 2px 2px #000;
+    text-align: center;
+}
+input[type=submit], input[type=reset]{
+    background-color: #4CAF50;
+    border: 4px solid #ccc;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+</style>
 </head>
 <body>
-<div id="main">
-<div id="baner">
-Martial Arts Academy Bastion
-</div>
-<div id="lewy">
-<p></p>
-<ul>
-<li><a href="informacjeog.html">Informacje ogólne</a></li>
-<br>
-<li><a href="cennikikontakt.html">Cennik i Kontakt</a></li>
-<br>
-<li><a href="grafika.html">Grafik</a></li>
-<br>
-<li><a href="ankieta.html">Ankieta Badawcza</a></li>
-<br>
-<li><a href="dadadada.html">Kalkulator BMI</a></li>
-<br>
-<br>
+<h1>Ankieta na temat aktywności sportowej</h1>
+<form action="mailto:wsip@wsip.pl?subject=Temat ankiety" method="post">
+<p><strong>Ile masz lat?</strong>: <input type="text" name="Imie" size="30" maxlength="40" style="position: absolute; left: 150px; background-color: #CCFF99; font-style: italic; color: grey;" required></p>
 
-</ul>
-</div>
-<div id="prawy">
-<table>
-<tr>
+<input type="radio" name="Płeć" value="Kobieta">Kobieta
+<input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna
 
-<td colspan="2"><div class="post">
-<img src="111.jpg" alt="">
-</div>
-</td>
+<p>Określ z jaką częstotliwością podejmujesz aktywność fizyczną?</p>
+<input type="radio" name="Wiek" value="rzadziej niż raz w miesiącu">rzadziej niż raz w miesiącu<br>
+<input type="radio" name="Wiek" value="raz w miesiącu">raz w miesiącu<br>
+<input type="radio" name="Wiek" value="kilka razy w miesiącu">kilka razy w miesiącu<br>
+<input type="radio" name="Wiek" value="raz w tygodniu">raz w tygodniu<br>
+<input type="radio" name="Wiek" value="kilka razy w tygodniu">kilka razy w tygodniu<br>
+<input type="radio" name="Wiek" value="codziennie">codziennie 
+<p>W jakich miejscach ćwiczysz najczęściej?</p>
+<input type="checkbox" name="Muzyka" value="na siłowni">na siłowni<br>
+<input type="checkbox" name="Muzyka" value="na świeżym powietrzu">na świeżym powietrzu<br>
+<input type="checkbox" name="Muzyka" value="na boisku/korcie">na boisku/korcie<br>
+<input type="checkbox" name="Muzyka" value="w szkole">w szkole<br>
+<input type="checkbox" name="Muzyka" value="na sali gimnastycznej">na sali gimnastycznej<br>
+<input type="checkbox" name="Muzyka" value="w domu">w domu<br>
+<input type="checkbox" name="Muzyka" value="na basenie">na basenie<br>
 
-<td colspan="2"><div class="post">
-<img src="222.jpg" alt="">
-</div>
-</td>
+<input type="checkbox" name="Muzyka" value="Inna">w innym: jakim?
+<input name="Muzyka">
 
-<td colspan="2"><div class="post">
-<img src="333.jpg" alt="">
-</div>
-</td>
+<p>Jak oceniłbyś/łabyś swoją sprawność fizyczną?</p>
+<input type="radio" name="Płeć" value="doskonała">doskonała
+<input type="radio" name="Płeć" value="bardzo dobra">bardzo dobra
+<input type="radio" name="Płeć" value="dobra">dobra
+<input type="radio" name="Płeć" value="przeciętna">przeciętna
+<input type="radio" name="Płeć" value="niska">niska
+<input type="radio" name="Płeć" value="bardzo niska">bardzo niska
 
-</tr>
-
-<tr>
-
-<td colspan="2"><div class="post">
-<img src="444.jpg" alt="">
-</div>
-</td>
-
-<td colspan="2"><div class="post">
-<img src="555.jpg" alt="">
-</div>
-</td>
-
-<td colspan="2"><div class="post">
-<img src="666.jpg" alt="">
-</div>
-</td>
-</tr>
-
-<tr>
-
-<td colspan="2"><div class="post">
-<img src="777.jpg" alt="">
-</div>
-</td>
-
-<td colspan="2"><div class="post">
-<img src="888.jpg" alt="">
-</div>
-</td>
-
-<td colspan="2"><div class="post">
-<img src="999.jpg" alt="">
-</div>
-</td>
+<p>Czy uważasz, że Twoja szkoła jest dobrze wyposażona pod względem sprzętu i obiektów sportowych?</p>
+<input type="radio" name="Płeć" value="tak">tak
+<input type="radio" name="Płeć" value="nie">nie
 
 
-</tr>
-</table>
-</div>
-</div>
+</select> </p>
+<p><input type="reset" value="Reset">
+<input type="submit" value="Submit"></p>
+</form>
 </body>
 </html>
